@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
     <title>Vela Presentation</title>
+    <link rel="icon" type="image/png" href="images/VELA-Symbol.png">
 </head>
 <style>
 	body {
-		margin: auto;
-		width: 800px;
-		font-family: 'Crimson Pro';
+   		display: flex;
+   		flex-direction: column;
+   		justify-content: center;
+   		align-items: center;
+   		font-family: 'Crimson Pro';
 		letter-spacing: 0.03em;
 		line-height: 1.6;
 		font-size: 25px;
 		text-align: 'left';
 		color: white;
+		
 
 		/* previoius version colors */
 		/*background-color: #48687c; */
@@ -31,22 +35,42 @@
 		/*height: 100%;
 		background-attachment: fixed;*/
 	}
+	.column-element
+	{
+		margin: 0px;
+		padding: 0px;
+		width: 800px;
+	}
 	
 	figure {
 		margin: 0px; /* figure elements have default margins */
 		margin-bottom: 20px;
 	}
 	
+	.image
+	{
+		border-style: solid;
+		border-width: 5px;
+		border-right-width: 20px;
+		border-left-width: 20px;
+		border-color: white;
+		border-radius: 5px;
+		display: block;
+		width: 760px;
+	}
+	
 	iframe {
 		border-style: solid;
-		border-width: 10px;
-		border-color: white;
-		border-radius: 15px;
+		border-width: 5px;
+		border-top-width: 20px;
+		border-bottom-width: 20px;
+		border-color: black;
+		border-radius: 5px;
 		display: block;
 		margin: 0px;
 		padding: 0px;
-		width: 790px; /* because of the thicker border */
-		height: 500px;
+		width: 790px;
+		height: 444px;
 		web-share;
 		referrerpolicy: strict-origin-when-cross-origin;
 	}
@@ -60,42 +84,41 @@
 		color: orange;
 	}
 	
+	h3, h4
+	{
+		font-family: 'Gaegu';
+		margin-top: 40px;
+	}
 	h3
 	{
-		font-family: 'Gaegu';
-		margin-bottom: 0px;
-		font-size: 60px;
-		/*color: #FFDF88;*/
+		font-size: 70px;
+		line-height: 0.6;
+		margin-bottom: 20px;
 	}
-	
 	h4
 	{
-		font-family: 'Gaegu';
 		margin-bottom: 0px;
 		font-size: 40px;
 	}
-	
-	.image
+	ul
 	{
-		border-style: solid;
-		border-width: 5px;
-		border-color: white;
-		border-radius: 15px;
-		display: block;
-		width: 800px;
+		margin: 0px;
 	}
+
 
 </style>
     
 <body>
-
+<div class = "column-element" style="width:1200px;"> <!-- first body div -->
 <figure>
-<img src="images/VELA-Poster-4.png" style="width: 1200px; margin-left: -200px; margin-top: 20px; border-radius: 15px; border-style: solid; border-color: white; border-width: 10px" >
+<img src="images/VELA-Poster-4.png" class="image" style='width: 1200px;'>
 </figure>
 <figure>
-<img src="images/by-MOONU-logo.png" style="width: 400px; margin-top: -30px; margin-left: -200px;" >
+<img src="images/by-MOONU-logo.png" style='width: 400px;'>
 </figure>
+</div>
 
+<div class = "column-element"> <!-- second body div -->
 <figure>
 <iframe src="https://www.youtube.com/embed/YX_OWhFiNGc?si=Qiu5i8aCwGLDPTZB" title="VELA Showcase Glimpse" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
@@ -119,11 +142,11 @@
 <figure>
 <img src="images/Item-Example-2.png" class='image'>
 </figure>
-<p>... an accessed star (lime slice) with one <span style = "font-weight: bold;">item: </span>the <span style = "font-weight: bold;">frame</span> with text.</p>
+<p>... an accessed star (lime slice) with one <strong>item: </strong>the <strong>frame</strong> with text.</p>
 
 <ul>
 	<li>Items are the actual container of user content (text and images).</li>
-	<li><span style = "font-weight: bold;">Items make up the content of a star.</span></li>
+	<li><strong>Items make up the content of a star.</strong></li>
 </ul>
 
 <p>From afternoon to night:</p>
@@ -153,31 +176,31 @@
 </figure>
 
 
-<p>Sitting in front of a (horizontal) wide screen that just shows an A4 (vertical) paper on a bland background has <span style = "font-weight: bold;">little to do with human nature.</span></p>
-<p>Word processors emerged in the early 90s alongside limited hardware and were geared towards printing. Since then they changed little in design.</p>
+<p>Sitting in front of a (horizontal) wide screen that just shows an A4 (vertical) paper on a bland background has <strong>little to do with human nature.</strong></p>
+<p>Word processors are geared towards printing. Emerging in the early 90s, they were shaped by limited hardware; since then they changed little in design.</p>
 <p>Then they're collab and brainstorming apps, but they're rigid, have a single-use-plastic design (small, shallow projects), and by emulating office tools (whiteboards, post-its...) they inherit their limitations. And mind map apps never worked for creativity (or anything): they enforce an hierarchy which is counter-creative; they don't feel dynamic and get crowded quickly.</p>
-<p><span style = "font-weight: bold;">Computers have become so much more. </span>The proof lies in computer games.</p><p>Vela's purpose is to combine a computer game experience with work. That is: <span style = "font-weight: bold;">game graphics + spatial movement + dynamic object and information handling.</span></p>
+<p><strong>Computers have become so much more. </strong>The proof lies in computer games.</p><p>Vela's purpose is to combine a computer game experience with work. That is: <strong>game graphics + spatial movement + dynamic object and information handling.</strong></p>
 
 <figure>
 <img src="images/VELA-Purpose.png" class='image'>
 </figure>
 
-<p>The backdrop in version I are stylized clouds and trees. The style is somewhere in between pixel art (blocky) and vector art (smooth contours), the result is cherry trees looking like candy (not intended). It shows the spring-version; the landscape as well as stars change with every season. Everything is hand-crafted, no AI for art creation.</p>
+<p>The backdrop thus far are stylized clouds and trees. The style is somewhere in between pixel art (blocky) and vector art (smooth contours), the result is cherry trees looking like candy (not intended). No AI is used for the art. The landscape as well as stars change with every season. In this presentation you can see a spring (cherry blossom stars) and summer version (lemon, lime slice stars).<br>This is just a simple environment that allows me to test lighting. The goal is to have artists create beautiful natural and urban spaces.</p>
 
 <figure>
-<img src="images/Dusk-Teaser.png" class='image' style='width: 800px; border-width: 10px'>
+<img src="images/Dusk-Teaser.png" class='image'>
 </figure>
 
 <h3>The Development</h3>
-<p>... so far was great fun. It is <span style = "font-weight: bold;">what I love to do.</span></p>
-<p>In Vela come three big loves of mine together:<span style = "font-weight: bold;"> nature, creativity </span>and <span style = "font-weight: bold;">tech. </span>When I'm not working on it, I'm thinking about it all the time, which is a good sign.</p>
-<p>First I developed a <span style = "font-weight: bold;">design concept which took two years and three revisions.</span> Then:</p>
+<p>... so far was great fun. This is what I love to do.</p>
+<p>In Vela come three big loves of mine together:<strong> nature, creativity </strong>and <strong>tech. </strong></p>
+<p>First I developed a <strong>design concept which took two years and three revisions.</strong> Then:</p>
 
 <figure>
 <img src="images/made-with-love-in-löve-white.png" style="width: 800px">
 </figure>
 
-<p>I've been busy building an engine on top of the 2D framework (LÖVE): creating a camera, animations, connection engine, text engine and more. Except for internet protocols, I've not been using any libraries and coded up my own environment. That is to ensure coherent design that suits the purpose of Vela.</p>
+<p>I've been busy building an engine on top of the 2D framework (LÖVE): creating a camera, animations, constellation engine, text engine and more.</p>
 
 <figure>
 <iframe src="https://www.youtube.com/embed/EBOfHFNS7NM?si=RAMyB_-7ATR9mxr_" title="VELA Text Engine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -191,18 +214,28 @@
 <iframe src="https://www.youtube.com/embed/QiDFYweVSJc?si=aeprgdoJSOdPg6XI" title="VELA making-of" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 
-<h3>Beyond Version I</h3>
-
-<p>If Vela should become successful, then this is how it will look:</p>
-
+<h3>Worlds</h3>
 <figure>
 <img src="images/Tokyo-Teaser.png" class = 'image'>
 </figure>
 
-<p>The whole design concept of Vela was conceived with worlds like this in mind. However, creating <span style="font-style: italic">this </span>level of visual experience is beyond my league. <span style="font-style: italic">(Disclaimer: this is an old presentation image and the star and connection design you can see here is already obsolete.)</span></p>
+<figure>
+<img src="images/Novel-Teaser.png" class = 'image'>
+</figure>
+
+<figure>
+<img src="images/Cygnus-Teaser.png" class = 'image'>
+</figure>
+
+<figure>
+<img src="images/Tokyo-2-Teaser.png" class = 'image'>
+</figure>
+
+<p>The whole design concept of Vela was conceived with worlds like this in mind. However, <i>this</i> level of artistry is beyond my league. <i>(Disclaimer: these images are from an older presentation and the star and connection design you can see here is already obsolete.)</i></p>
 <p>This will be the work of skilled artists.</p>
-<p>In the following link are more such Vela world impressions, also showcasing more use cases for Vela. Since this is <span style="font-style: italic">not how version I will look</span>, it's outsourced onto a Canva presentation to avoid confusion.</p>
-<h4><span style="font-style: italic; margin-bottom: 0px;">Future Outlook Presentation:</span></h4>
+<p>In the following link are more such Vela world impressions, also showcasing more use cases for Vela. Since the design has already progressed, this older presentation is outsourced onto a Canva presentation to avoid confusion. The core ideas of stars, constellations and fields are the same though. It serves the purpose of giving you an impression how natural and urban worlds will look.</p>
+<p><i>Don't forget to imagine that it is live-rendered, with forming and moving clouds, wind shaking the trees, dynamic changes of light throughout day to night.</i></p>
+<h4><i><span style="margin-bottom: 0px;">Future Outlook Presentation:</span></i></h4>
 <p style = "margin-top: 0px;">
 	<a href="https://www.canva.com/design/DAGB7MYADzI/sMqabpsO8QbaH-ENPlag7w/edit?utm_content=DAGB7MYADzI&amp;utm_campaign=designshare" target="_blank" rel="noopener">https://www.canva.com/design/DAGB7MYADzI/sMqabpsO8QbaH-ENPlag7w/edit?utm_content=DAGB7MYADzI&amp;utm_campaign=designshare</a>
 </p>
@@ -222,51 +255,51 @@
 <img src="images/VELA-galaxy-objects-explained.png" class='image'>
 </figure>
 
-<h4><span style = "font-weight: bold;">Constellation</span></h4>
+<h4><strong>Constellation</strong></h4>
 <figure>
 <img src="images/pesto-constellation-NIGHT-REMADE.png" class='image'>
 </figure>
 
-<p>... the <span style = "font-weight: bold;">constellation </span>symbol and name are floating nearby.</p>
-<h4><span style = "font-weight: bold;">Field</span></h4>
+<p>... the <strong>constellation </strong>symbol and name are floating nearby.</p>
+<h4><strong>Field</strong></h4>
 
 <figure>
 <img src="images/VELA-pesto-field-night-Crimson-Pro.png" class='image'>
 </figure>
 
-<p>... the <span style = "font-weight: bold;">field </span>symbol and name is on the upper left. The <span style = "font-weight: bold;">frame adjusts itself.</span></p>
+<p>... the <strong>field </strong>symbol and name is on the upper left. The <strong>frame adjusts itself.</strong></p>
 
-<h4><span style = "font-weight: bold;">Star</span></h4>
+<h4><strong>Star</strong></h4>
 	
 <figure>
 <img src="images/VELA-pesto-star-7.png" class='image'>
 </figure>
 
-<p>... an opened / <span style = "font-weight: bold;">accessed star. </span>It contains three items, two with images and one with text. As with fields, the<span style = "font-weight: bold;"> frame adjusted itself</span> around the three items.</p>
+<p>... an opened / <strong>accessed star. </strong>It contains three items, two with images and one with text. As with fields, the<strong> frame adjusted itself</strong> around the three items.</p>
 
 <h3>Design • Paradigms</h3>
 
 <p>(this is a short extract of a wider scope of design decisions)</p>
 
 <ul>
-	<li>Vela's<span style="font-style: italic"><span style = "font-weight: bold;"> design is about finding and developing ideas.</span></span> It's not about publishing.</li>
-	<li>Much of the design stems from what I believe are the three pillars onto which creativity can thrive: space, pleasantness (beauty) and associative creation.</li>
+	<li>Vela's<i><strong> design is about finding and developing ideas.</i></strong> It's not about publishing.</li>
+	<li>Much of the design stems from what I believe are the <strong>three pillars onto which creativity can thrive:</strong> space, pleasantness (beauty) and associative creation.</li>
 	<li>Stars, Constellations and Fields are there to manage your content: the items.</li>
 	<li>
-	<span style = "font-weight: bold;">Every star is equal</span>...</li>
-	<li>... and <span style = "font-weight: bold;">every connection is equal</span> and <span style = "font-weight: bold;">they don't have directions.</span>
+	<strong>Every star is equal</strong>...</li>
+	<li>... and <strong>every connection is equal</strong> and <strong>they don't have directions.</strong>
 	</li>
-	<li>... this <span style = "font-weight: bold;">prevents a hierarchy of nodes </span>(your stars). An initially enforced hierarchy is poison for creativity. Just let your thoughts flow, think of management later.</li>
+	<li>... this <strong>prevents a hierarchy of nodes </strong>(your stars). An initially enforced hierarchy is poison for creativity. Just let your thoughts flow, think of management later.</li>
 	<li>If you want a constellation to represent time, progress, flow... simply build it from left to right, or skywards.</li>
 	<li>The galaxy doesn't encourage a direction, you can expand leftwards, or skywards. In stars: you can place items left of the star, and anywhere around it.</li>
-	<li>Constellations and fields will be <span style = "font-weight: bold;">recognizable by their appearance</span> (more than their names), <span style = "font-weight: bold;">just as with real constellations.</span>
+	<li>Constellations and fields will be <strong>recognizable by their appearance</strong> (more than their names), <strong>just as with real constellations.</strong>
 	</li>
-	<li>Galaxy objects don't need names. <span style = "font-weight: bold;">Their unique identity is their position in the sky. </span>Two objects of the same kind cannot sit on the same spot. You can give them names.</li>
+	<li>Galaxy objects don't need names. <strong>Their unique identity is their position in the sky. </strong>Two objects of the same kind cannot sit on the same spot. You can give them names.</li>
 	<li>
-	<span style = "font-weight: bold;">No nesting, no folders and subfolders.</span> Vela forces users to move over a 2D space to locate content: the sky / galaxy. Everything exists side by side.</li>
-	<li>The navigational space is 2D because the screen is a two-dimensional surface. It shall feel inviting like standing before a canvas or open window. Interacting should be direct like writing to a blackboard.</li>
-	<li>Vela is <span style = "font-weight: bold;">designed for horizontal movement.</span> It's meant for <span style="font-style: italic">walking</span>. Our most natural state, and so conducive for creativity, as being creative is itself a state of motion.&nbsp;</li>
-	<li><span style = "font-weight: bold;">Vela embraces the space widescreens provide.</span></li>
+	<strong>No nesting, no folders and subfolders.</strong> Vela forces users to move over a 2D space, the sky / galaxy, to locate content. Everything exists side by side.</li>
+	<li>The navigational space is 2D because the screen is a two-dimensional surface. It shall feel inviting like standing before a canvas or an open window. Interacting should feel direct like writing to a blackboard.</li>
+	<li>Vela is <strong>designed for horizontal movement.</strong> It's meant for <i>walking</i>. Our most natural state, and so conducive for creativity, as being creative is itself a state of motion.</li>
+	<li><strong>Vela embraces the space widescreens provide.</strong></li>
 	<li>Anything looking like a web or social media page is a big no-no!</li>
 	<li>No drop-down menus.</li>
 	<li>No static tool bars / panels.</li>
@@ -274,12 +307,12 @@
 	<li>It's being solved differently.</li>
 </ul>
 
-<p><span style = "font-weight: bold;">The design of features and functionalities is set in stone for Version I. It was finished long before any visual draft or line of code had been drawn or written.</span></p>
+<p><strong>The design of features and functionalities is set in stone for Version I. It was finished long before any visual draft or line of code had been drawn or written.</strong></p>
 
 <h3>Afterword</h3>
 
 <figure>
-<img src="images/Jack-London.png" class='image' style='border-width: 10px'>
+<img src="images/Jack-London.png" class='image'>
 </figure>
 
 <p>It has been scientifically demonstrated that being in nature enhances creativity. We've spent the last 400.000 years there and much longer as evolving mammals, that's why I believe we're hardwired for its experience.</p><p>However, since recently (2007) more people live in urban areas than in rural ones. Wouldn't it make sense to bring nature to their apartments?</p>
@@ -289,21 +322,22 @@
 	<li>Another could become Vela.</li>
 </ul>
 
-<p><span style = "font-weight: bold;">Be like Jack London and have your own haven of natural serenity. For the sake of creativity.</span> Don't be like Jack London and drink heavily. Also for the sake of creativity.</p>
-<p>Another source of inspirational pleasantness for me have been computer game graphics and hand-drawn art. There's something so soothing about them; the clarity and evenness of the colors and contours; the beauty of nature in a clearer, liberated way like Asian Gongbi or Ukiyo-e drawings. And computer game graphics can feel natural and alive due to motion and animation.</p>
-<p>In Vela I'm striving to give you both: <span style="font-style: italic"><span style = "font-weight: bold;">nature as pleasant art. </span></span>There will also be beautiful urban spaces.</p>
-<p>This application is ultimately for myself. I've always been having a strong creative streak, but there was no digital tool out there that would be a good friend and vessel for the scatterbrain and endless train of thoughts that is my mind. The best I could do was to sit in a garden with a A4+ notebook with blank pages (no lines!) and drawing pen for writing prose. Like this I literally developed the first design concept of Vela. The next three revisions were developed in Sublime Text, for which I wrote a small script to use syntax highlighting for my prose. Something like Microsoft Word was out of question, for me it's revolting. Its design has nothing to do with developing ideas.</p>
+<p><strong>Be like Jack London and have your own haven of natural serenity. For the sake of creativity.</strong> Don't be like Jack London and drink heavily. Also for the sake of creativity.</p>
+<p>Another source of inspirational pleasantness for me have been computer game graphics and hand-drawn art. There's something so soothing about them; the clarity and evenness of the colors and contours; the beauty of nature in a clearer, liberated way like Asian Gongbi or Ukiyo-e drawings. And it's alive due to motion and animation.</p>
+<p>In Vela I'm striving to give you both: <i><strong>nature as pleasant art. </strong></i>There will also be beautiful urban spaces.</p>
+<p>About my motivation: I've always been having a strong creative streak, but there was no digital tool out there that would be a good friend and vessel for the scatterbrain and endless train of thoughts that is my mind. The best I could do was to sit in a garden with a A4+ notebook with blank pages (no lines!) and drawing pen for writing prose. Like this I literally developed the first design concept of Vela. Something like Microsoft Word was out of question, for me it's revolting. Its design has nothing to do with developing ideas.</p>
 
-<hr style = "width: 100%; color: white; height: 6px; background-color: white; border-radius: 3px; margin-top: 90px;"></hr>
+<hr style = "width: 100%; color: white; height: 3px; background-color: white; border-radius: 3px; margin-top: 50px; margin-bottom: 50px;"></hr>
 
-<h3>Functional Scope of Version I</h3>
+<h3>Functional Scope</h3>
 
 <p>You're now having a pretty good idea what Vela is about.</p>
-<p><span style = "font-weight: bold;">The overview concludes with the previous chapter.</span></p>
+<p><strong>The overview concludes with the previous chapter.</strong></p>
 <p>If you're curious about details, you can read on.</p>
 
+<div class='container'>
 <h4>Platforms</h4>
-
+</div>
 <ul>
 	<li>Windows</li>
 	<li>macOS</li>
@@ -322,19 +356,19 @@
 <h4>Items</h4>
 
 <ul>
-	<li>Fill items with text <span style="font-style: italic">and </span>images.</li>
+	<li>Fill items with text <i>and </i>images.</li>
 	<li>Like galaxy objects, items have a "hard border" and cannot overlap. They're resizable and customizable.</li>
-	<li>A model for items is <span style = "font-weight: bold;">Sublime Text</span>.</li>
-	<li>The <span style = "font-weight: bold;">design aim for items is to be like text editors.</span> Items need to have the feeling of lightness, flux and changeability of text editors, but it also need to allow some of the customs prose writers expect: styling like bold, italic, changing fonts, font colors, font sizes, text highlighting and more.</li>
+	<li>A model for items is <strong>Sublime Text</strong>.</li>
+	<li>The <strong>design aim for items is to be like text editors.</strong> Items need to have the feeling of lightness, flux and changeability of text editors, but it also need to allow some of the customs prose writers expect: styling like bold, italic, changing fonts, font colors, font sizes, text highlighting and more.</li>
 	<li>Lines, or paragraphs, play a pivotal role.</li>
-	<li>A <span style = "font-weight: bold;">line / paragraph can hold text or an image.</span></li>
+	<li>A <strong>line / paragraph can hold text or an image.</strong></li>
 	<li>Displayed line numbers (optional).</li>
 </ul>
 
-<p><span style = "font-weight: bold; margin-left: 20px;">Items • Text</span></p>
+<p><strong><span style = "margin-left: 20px;">Items • Text</span></strong></p>
 
 <ul>
-	<li>The word you're hovering with the mouse or writing on is highlighted, as is the sentence you're hovering over or writing on.</li>
+	<li>The word you're hovering over with the mouse or writing on is highlighted, as is the sentence you're hovering over or writing on.</li>
 	<li>... holding a key like 'o' will change the color of the highlighted word 'orange'. If you also hold down 's' (for sentence) it will change the color of the whole sentence. You can do that while hovering with mouse or while writing.
 	<li>Any word can have any font, size, style and additional features like underline, strikethrough etc.
 	<li>Four text alignments (left, right, center, justify).</li>
@@ -343,7 +377,7 @@
 	<li>Items will automatically provide their own background-adjustments for pleasing background-to-text contrasts against the backdrop of the sky. Pre-set contrasts will be adjustable in strength; backgrounds and fonts are directly customizable.</li>
 </ul>
 
-<p><span style = "font-weight: bold; margin-left: 20px;">Items • Images</span></p>
+<p><strong><span style = "margin-left: 20px;">Items • Images</span></strong></p>
 
 <ul>
 	<li>An image takes up a line / paragraph.</li>
@@ -353,21 +387,19 @@
 	<li>.jpg / .jpeg, .png .bmp .tga .hdr .pic .exr</li>
 </ul>
 
-<h4>Galaxy Objects (Stars, Constellations, Fields)</h4>
+<h4>Galaxy Objects</h4>
 
 <ul>
-	<li>... are grabbable, movable, searchable ...</li>
+	<li>... like stars, constellations and fields: are grabbable, movable, searchable ...</li>
 </ul>
 
 <h4>Appearance</h4>
 <ul>
-	<li>Different star graphics that befit the seasons</span> (snowflake crystals in winter, cherry blossoms in spring...).</li>
+	<li>Different star graphics that befit the seasons (snowflake crystals in winter, cherry blossoms in spring...).</li>
 	<li>Your HUD, your galaxy objects and items are customizable to some degree: choosable colors, size...</li>
-	<li>A world with a simple vector graphics style (as you could see), with 9 natural lights that blend in dynamically for the actual, correct time of your location.</li>
-	<li>You can choose natural lights at any time, customize times, etc.</li>
-	<li>Multiple Window options: borderless fullscreen, windowed (with or without borders).</li>
-	<li>Anti-Aliasing levels: none, MSAA: 2x, 4x, 8x</li>
-	<li>In the future, worlds will look much more detailed and immersive as you can see in the "future outlook presentation" upper.</li>
+	<li>Beautiful lush, handdrawn worlds of natural and urban spaces</li>
+	<li>Natural lights that blend in dynamically for the actual, correct time of your location.</li>
+	<li>Anti-Aliasing</li>
 </ul>
 
 <h4>Interaction</h4>
@@ -376,7 +408,7 @@
 	<li>Shortcuts that make item and galaxy interaction a breeze.</li>
 	<li>Same shortcuts may have different effects whether you are in the galaxy or interacting in an item.</li>
 	<li>The way shortcuts work may be novel. Hint: it's not gonna be Ctrl + key, Ctrl + Shift + key etc.</li>
-	<li>Shortcuts work by just holding a single key down for a short amount of time, like 0.2 seconds. Vela realizes you wanted to trigger a shortcut and won't write that key down as a letter if you're interacting with text</li>
+	<li>Shortcuts work by just holding a single key down for a short amount of time, like 0.2 seconds. Vela realizes you wanted to trigger an action and won't write that key down as a letter if you're interacting with text.</li>
 	<li>Exceptions are: Ctrl + z, x, c, v, as they're so popular. They may be the only ones.</li>
 	<li>And more fancy interactions that may be new within today's desktop application landscape.</li>
 </ul>
@@ -388,12 +420,12 @@
 	<li>The HUD, like real HUDs, is "on the screen", visually overlaying the galaxy.</li>
 	<li>The HUD represents the user.</li>
 	<li>The HUD shows arrows at the screen edges to the closest galaxy objects outside of the camera's field of view. The arrows' appearances match that of the galaxy objects.</li>
-	<li>The HUD offers to show an area with all your <span style="font-style: italic"><span style = "font-weight: bold;">constellations </span></span>and <span style="font-style: italic"><span style = "font-weight: bold;">fields </span></span>as small, stylized miniature images. You will recognize them by their shape. Clicking on one will make the camera fly you there and center the target object.</li>
-	<li>"Tell" the HUD (by typing into a search field) what you're looking for. It'll provide suggestions of galaxy objects (<span style="font-style: italic"><span style = "font-weight: bold;">star, constellation, field, items</span></span>). Click on a suggestion to let the camera fly you there.</li>
-	<li>The HUD comes with an inventory. A slot can hold one of: <span style="font-style: italic"><span style = "font-weight: bold;">text</span></span>, <span style="font-style: italic"><span style = "font-weight: bold;">image</span></span>, <span style="font-style: italic"><span style = "font-weight: bold;">item</span></span>, <span style="font-style: italic"><span style = "font-weight: bold;">star</span></span>, <span style="font-style: italic"><span style = "font-weight: bold;">constellation </span></span>or <span style="font-style: italic"><span style = "font-weight: bold;">field</span></span>. The inventory doesn't have a fixed size, but grows and shrinks dynamically as you add or remove objects.</li>
+	<li>The HUD offers to show an area with all your <i><strong>constellations </i></strong>and <i><strong>fields </i></strong>as small, stylized miniature images. You will recognize them by their shape. Clicking on one will make the camera fly you there and center the target object.</li>
+	<li>"Tell" the HUD (by typing into a search field) what you're looking for. It'll provide suggestions of galaxy objects (<i><strong>star, constellation, field, items</i></strong>). Click on a suggestion to let the camera fly you there.</li>
+	<li>The HUD comes with an inventory. A slot can hold one of: <i><strong>text</i></strong>, <i><strong>image</i></strong>, <i><strong>item</i></strong>, <i><strong>star</i></strong>, <i><strong>constellation </i></strong>or <i><strong>field</i></strong>. The inventory doesn't have a fixed size, but grows and shrinks dynamically as you add or remove objects.</li>
 	<li>Objects in the inventory are properties of the HUD and not of the galaxy.</li>
-	<li>They HUD, belonging to the user, is saved in the local user file. So everything regarding the HUD, including the inventory with all stored objects, is saved on app close and will still be there on app start.</li>
-	<li>The inventory's purpose is caching and carrying: to other places and galaxies.</li>
+	<li>The HUD, belonging to the user, is saved in the local user file. So everything regarding the HUD, including the inventory with all stored objects, is saved on app close and will still be there on app start.</li>
+	<li>The inventory's purpose is caching and carrying. Use the HUD to take objects to <i>other</i> galaxies.</li>
 </ul>
 
 <h4>Loading and Import</h4>
@@ -402,30 +434,27 @@
 	<li>In your OS there will be one, single folder which works as your files gateway to Vela.</li>
 	<li>Opening Vela for the first time will create that folder (by default on desktop; path is changeable).</li>
 	<li>Everything you save and export and everything you load and import from Vela happens to and from this one folder.</li>
-	<li>Just place all the images you want into that folder, and Vela will automatically load them. In Vela it will present them in an openable file pool, from where you can add them to your items.</li>
-	<li>You can add sub-folders for your own convenience, Vela will automatically walk through all of them and gather all the readable files to Vela's file pool.</li>
-	<li>You cannot open a file explorer (doesn't exist) in Vela to open individual files. It has to happen through that folder.</li>
 	<li>Apart from images and Vela files, Vela will also load plain text files (.txt) from that folder whose content you can add to your items.</li>
-	<li>.txt file is the <span style="font-style: italic">only text file format</span> that is importable.</li>
+	<li>.txt file is the <i>only text file format</i> that is importable.</li>
 	<li>You can paste texts saved to your OS's clipboard (Ctrl + C) directly to your items.</li>
 </ul>
 
 <h4>Saving and Export</h4>
 
 <ul>
-	<li>The <span style = "font-weight: bold;">galaxy is your default save file. </span>Any interaction is saved live (can get turned off).</li>
+	<li>The <strong>galaxy is your default save file. </strong>Any interaction is saved live (can get turned off).</li>
 	<li>Any Galaxy object is savable. Each will contain all its children, meaning saving a constellation will contain all the stars, with all the items and all the items' contents. The suffix of the files may look like this: .VelaGalaxy, .VelaStar, .VelaConstellation, .VelaField, .VelaItem. Use this to share work, without having to share the whole galaxy.</li>
-	<li>All images loaded into Vela are linked (they're not embedded in the Vela save file).</li>
-	<li>Item content is exportable as HTML (images and styling included) or plain text (no images, no styling).&nbsp;</li>
+	<li>All images loaded into Vela are linked by default, meaning Vela just remembers the path. They can get embedded into the Vela file.</li>
+	<li>Item content is exportable as HTML (images and styling included) or plain text (no images, no styling).</li>
 	<li>The exported HTML files are openable in Microsoft Word, where the styling / formatting is conserved (that's because the exported HTML file will use simple in-line styling, which Word can understand).</li>
-	<li>You can export on any level. Exporting a star e.g. will make Vela go through all its items and put everything together into one HTML page. It will go from top left to bottom right through the star's items. It will do the same with constellations, fields, even your galaxy.</li>
+	<li>You can export on any level. Exporting a star e.g. will make Vela go through all its items and put everything together into one simple and beautiful HTML page. It can do the same with constellations, fields, even your galaxy.</li>
 </ul>
 
-<h4><span style="font-style: italic"><span style = "font-weight: bold;">Planned for later</span></span></h4>
+<h4><i><strong>Planned for later (after version 1.0)</i></strong></h4>
 
 <ul>
 	<li>Cloud service.</li>
-	<li>... that keeps your files</li>
+	<li>... that keeps your files and images.</li>
 	<li>... and allows other users to join your galaxy and work on it in real-time.</li>
 	<li>Touch support.</li>
 	<li>A mobile (smartphone) app.</li>
@@ -435,20 +464,21 @@
 
 <ul>
 	<li>Initially, Vela will be a standalone, "singleplayer" desktop application.</li>
-	<li>All the effort goes into achieving a <span style="font-style: italic"><span style = "font-weight: bold;">good user experience first</span></span>. Then we can think of more.</li>
+	<li>All the effort goes into achieving a <i><strong>good user experience first</i></strong>. Then we can think of more.</li>
 	<li>There's no point in making anything collaborative while it doesn't yet feel convincing for a single user.</li>
-	<li>The original design for Vela was conceived <span style = "font-weight: bold;">for introvert creatives.</span></li>
-	<li>The design is standing, as is the engine written on top of the framework. But there's <span style = "font-weight: bold;">still a lot of figuring-out to do. </span>How will users feel? Does opening Vela positively pop into your eyes and give you good vibes? Do interactions contribute to a Zen flow?</li>
+	<li>The original design for Vela was conceived <strong>for introvert creatives.</strong></li>
+	<li>The design is standing, as is the engine written on top of the framework. But there's <strong>still a lot of figuring-out to do. </strong>How will users feel? Does opening Vela positively pop into your eyes and give you good vibes? Do interactions contribute to a Zen flow?</li>
 </ul>
 
-<p><span style="font-style: italic"><span style = "font-weight: bold;">All that you've seen thus far is still a small subset of the design concept behind it. This is to let you know that there's so much more waiting than what this list offers.</span></span></p>
+<p><i><strong>All that you've seen thus far is still a small subset of the design concept behind it. This is to let you know that there's so much more waiting than what this list offers.</i></strong></p>
 
 <h3>Credits</h3>
-<li>The content of the star showcase (pesto recipe) early on (text) and in the chapter "Design • Galaxy Objects" (text and images) is retrieved from loveandlemons.com: Love and Lemons, LLC. The recipe is shortened for presentational reasons.</li>
+<ul>
+	<li>The content of the star showcase (pesto recipe) early on (text) and in the chapter "Design • Galaxy Objects" (text and images) is retrieved from loveandlemons.com: Love and Lemons, LLC. The recipe is shortened for presentational reasons.</li>
 	<li>The items contents (text) in the video "VELA Natural Lights Palette" showcasing prose are the first three chapters from three books (in order): "Build What Matters" by Ben Foster and Rajesh Nerlikar; "Wild Swans" by Jung Chang; "The River's Song" by Suchen Christine Lim (first chapter of this book also showcased in the next video: "Smooth Twilight Timelapse")</li>
 	<li>Curved widescreen graphic in chapter "People": Samsung Electronics Co., Ltd.</li>
 	<li>Peripheral Vision graphic in chapter "People": original retrieved from Wikipedia article of "Peripheral Vision". Graphic uploader: Zyxwv99. The graphic has been altered for presentational reasons.</li>
-	<li>Background in the image in chapter "Beyond Version I" that shows the sky over Tokyo: CoMix Wave Films.</li>
+	<li>Backgrounds in the images in chapter "Beyond Version I": CoMix Wave Films.</li>
 	<li>Source of photo of Jack London writing in chapter "Afterword": The Book of Jack London by Charmian London.</li>
 	<li>Everything else:</li>
 </ul>
@@ -457,5 +487,6 @@
 <img src="images/MOONU-logo-VELA-WORLD.png" class = 'image' style="border-width: 0">
 </figure>
 
-</body>
+
+</div></body>
 </html>
